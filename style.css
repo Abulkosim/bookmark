@@ -3,3 +3,69 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --soft-red: hsl(0, 94%, 66%);
+  --soft-blue: hsl(231, 69%, 60%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+body {
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 120px;
+}
+
+.header-container {
+  max-width: 1020px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container ul li {
+  margin: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  list-style-type: none;
+}
+
+.header-container a {
+  color: var(--very-dark-blue)
+}
+
+.header-container .login {
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: var(--soft-red);
+  border: 2px solid var(--soft-red);
+  box-shadow: 0 5px 5px -2px lightgray;
+}
+
+.header-container a:hover {
+  color: var(--soft-red)
+}
+
+.header-container .login:hover {
+  background-color: white;
+}
