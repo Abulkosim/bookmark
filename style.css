@@ -12,11 +12,14 @@
 }
 
 body {
-  color: white;
   font-family: 'DM Serif Display', serif;
   font-family: 'Karla', sans-serif;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-family: 'Rubik', sans-serif;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 a {
@@ -28,7 +31,7 @@ header {
 }
 
 .header-container {
-  max-width: 1020px;
+  max-width: 1100px;
   height: 120px;
   margin: auto;
   display: flex;
@@ -69,3 +72,102 @@ header {
 .header-container .login:hover {
   background-color: white;
 }
+
+.intro-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.intro-text {
+  width: 40%;
+}
+
+.intro-photo {
+  width: 53%;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--very-dark-blue);
+  margin-bottom: 25px;
+}
+
+.intro-text p,
+.features-container p {
+  color: var(--grayish-blue);
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.intro-text a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  box-shadow: 0 5px 5px -2px lightgray;
+}
+
+.intro-text .chrome {
+  background-color: var(--soft-blue);
+  color: white;
+  margin-right: 20px;
+  border: 2px solid var(--soft-blue);
+}
+
+.intro-text .firefox {
+  background-color: #f7f7f7;
+  color: hsl(229, 31%, 21%);
+  border: 2px solid #f7f7f7;
+}
+
+.intro-text .chrome:hover {
+  color: var(--soft-blue);
+  background-color: white;
+}
+
+.intro-text .firefox:hover {
+  border: 2px solid hsl(229, 31%, 21%);
+}
+
+.intro-photo img {
+  width: 100%;
+}
+
+/* .intro-photo::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  width: 500px;
+  height: 300px;
+  background: hsl(231, 69%, 60%);
+  z-index: -1;
+  border-top-left-radius: 30% 50%;
+  border-bottom-left-radius: 30% 50%;
+} */
+
+.features-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.features-container h2 {
+  color: var(--very-dark-blue);
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.features-container p {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
