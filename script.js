@@ -4,6 +4,22 @@ const questions = Array.from(document.querySelectorAll('.question'));
 const images = Array.from(document.querySelectorAll('.question img'));
 const answers = Array.from(document.querySelectorAll('.answer'));
 
+const hamburger = document.querySelector('.hamburger');
+const hamburgerClose = document.querySelector('.hamburger-close');
+const page = document.querySelector('.page');
+
+const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+if (window.innerWidth < 600) {
+  hamburger.addEventListener("click", () => {
+    page.style.display = 'block'
+  })
+
+  hamburgerClose.addEventListener("click", () => {
+    page.style.display = 'none'
+  })
+}
+
 spans.forEach(item => item.addEventListener("click", () => {
   spans.forEach(elem => elem.classList.remove('chosen'));
   item.classList.add('chosen');
@@ -18,4 +34,3 @@ questions.forEach(item => item.addEventListener("click", () => {
   answers[questions.indexOf(item)].classList.remove('none');
   images[questions.indexOf(item)].classList.add('transform');
 }))
-
