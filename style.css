@@ -440,3 +440,310 @@ footer {
 .social-media img:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 1140px) {
+
+  .header-container,
+  .intro-container,
+  .footer-container {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 1070px) {
+  .intro-text h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .intro-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .intro-text,
+  .intro-photo {
+    width: 50%;
+  }
+
+  .intro-text .chrome {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 940px) {
+  .extension {
+    max-width: calc(100% - 80px);
+  }
+
+  .browser {
+    width: 31%;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .tab-text h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 810px) {
+  .header-container ul li {
+    margin: 15px;
+  }
+
+  .intro-text h1 {
+    margin-bottom: 15px;
+  }
+
+  .intro-text a {
+    padding: 8px 12px;
+    font-weight: 400;
+  }
+
+  .browser {
+    width: 32.5%;
+  }
+
+  .browser a {
+    padding: 10px 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 24px;
+  }
+
+  .contact-container span {
+    margin-bottom: 25px;
+  }
+
+  .contact-container input {
+    margin-right: 10px;
+  }
+
+  .contact-container a {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-container ul li {
+    margin: 12px;
+    font-size: 12px;
+  }
+
+  .footer-container ul li {
+    margin: 15px;
+  }
+
+  .tab-text h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 732px) {
+  .intro-container {
+    padding: 30px 0 40px;
+  }
+
+  .footer-container ul li {
+    font-size: 12px;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .intro-text a {
+    padding: 7px 5px;
+  }
+
+  .intro-text .chrome {
+    margin-right: 5px;
+  }
+
+  .features-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .tab-text h2 {
+    font-size: 24px;
+  }
+
+  .tab-text p {
+    font-size: 14px;
+  }
+
+  menu {
+    max-width: calc(100% - 60px);
+  }
+
+  .extension {
+    max-width: calc(100% - 60px);
+  }
+
+  .browser {
+    width: 32.5%;
+  }
+
+  .browser a {
+    padding: 8px 8px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header-container ul li {
+    margin-left: 8px;
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .intro-text,
+  .intro-photo {
+    width: 80%;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 36px;
+  }
+
+  .intro-text p {
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .intro-text a {
+    padding: 10px 20px;
+  }
+
+  .browsers {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .browser {
+    width: 40%;
+    margin: 20px;
+  }
+
+  .firefox,
+  .opera {
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .header-container ul li,
+  .footer-container ul li {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(100% - 60px);
+  }
+
+  .menu span {
+    width: 50%;
+    border-top: 1px solid #ddd;
+  }
+
+  .tabs {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tab-photo,
+  .tab-text {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .browsers {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .browser {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .intro-text {
+    width: 100%;
+  }
+
+  .intro-container h1 {
+    font-size: 28px;
+  }
+
+  .features-container p {
+    max-width: calc(100% - 60px);
+  }
+
+  .browser {
+    width: 70%;
+  }
+
+  .tab-photo,
+  .tab-text {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .browsers {
+    margin-bottom: 80px;
+  }
+
+  .email {
+    flex-direction: column;
+  }
+
+  .contact-container input {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .contact-container a {
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    width: 150px;
+  }
+
+  .intro-text .chrome,
+  .intro-text .ff {
+    display: block;
+    width: 60%;
+    margin: 10px auto
+  }
+}
+
+@media (max-width: 400px) {
+
+  .header-container,
+  .footer-container {
+    max-width: calc(100% - 40px);
+  }
+}
