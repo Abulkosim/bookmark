@@ -1,1 +1,1 @@
-Bookmark Landing Page -> https://abulkosim.github.io/bookmark
+Bookmark Landing Page -> bookmark-a.netlify.app
